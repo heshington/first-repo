@@ -1,0 +1,8 @@
+docker create \
+  --name=tautulli \
+  -v /opt/tautulli/config:/config \
+  -v /opt/tautulli/ro:ro \
+  -e PGID=1000 -e PUID=1000  \
+  -e TZ=Pacific/Auckland \
+  -p 8181:8181 \
+  tautulli/tautulli
