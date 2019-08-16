@@ -1,0 +1,12 @@
+docker run \
+-d \
+--name plex \
+--network=host \
+-e PLEX_UID="1000" \
+-e PLEX_GID="1000" \
+-e TZ="Pacific/Auckland" \
+-v /opt/plex/config:/config \
+-v /mnt/storage/shared/movies:/data/movies \
+-v /mnt/storage/shared/tv_shows:/data/tvshows \
+-v /opt/plex/transcode:/transcode \
+plexinc/pms-docker
