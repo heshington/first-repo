@@ -8,5 +8,6 @@ docker run \
 -v /opt/plex/config:/config \
 -v /mnt/storage/shared/movies:/data/movies \
 -v /mnt/storage/shared/tv_shows:/data/tvshows \
+-v /mnt/storage/shared/music:/data/music \
 -v /opt/plex/transcode:/transcode \
 plexinc/pms-docker
