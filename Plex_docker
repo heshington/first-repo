@@ -6,8 +6,8 @@ docker run \
 -e PLEX_GID="1000" \
 -e TZ="Pacific/Auckland" \
 -v /opt/plex/config:/config \
--v /mnt/storage/shared/movies:/data/movies \
--v /mnt/storage/shared/tv_shows:/data/tvshows \
--v /mnt/storage/shared/music:/data/music \
+-v /mnt/plex_media/shared/movies:/data/movies \
+-v /mnt/plex_media/shared/tv_shows:/data/tvshows \
+-v /mnt/plex_media/shared/music:/data/music \
 -v /opt/plex/transcode:/transcode \
 plexinc/pms-docker
