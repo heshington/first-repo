@@ -1,7 +1,7 @@
 docker create \
   --name=tautulli \
-  -v /opt/tautulli/config:/config \
-  -v /opt/tautulli/ro:ro \
+  -v /media/plex/config/Library/Application\ Support/Plex\ Media\ Server/Plug-ins/Tautulli:/config \
+  -v /media/plex/config/Library/Application\ Support/Plex\ Media\ Server/Logs:/plex_logs:ro \
   -e PGID=1000 -e PUID=1000  \
   -e TZ=Pacific/Auckland \
   -p 8181:8181 \
