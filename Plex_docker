@@ -6,7 +6,7 @@ docker run \
 -e PLEX_GID="1000" \
 -e TZ="Pacific/Auckland" \
 -v /opt/plex/config:/config \
--v /media/homer/Alpha/Media/Movies:/data/movies \
--v /media/homer/Alpha/Media/Tv_series:/data/tvshows \
+-v /mnt/md0/Media/Movies:/data/movies \
+-v /mnt/md0/Media/Tv_series:/data/tvshows \
 -v /opt/plex/transcode:/transcode \
 plexinc/pms-docker
